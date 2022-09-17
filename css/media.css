@@ -1,0 +1,799 @@
+/* MEDIA FOR HAMBURGER MENU  =======================================================*/
+
+
+
+
+@media (max-width: 1200px) {
+
+  .navbar {
+    position: fixed;
+    padding: 0.5rem 2rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    right: -150%;
+    top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+
+  .nav-item {
+    margin: 0.3rem 0;
+  }
+
+  .nav-menu.active {
+    right: 0.7rem;
+  }
+}
+
+/* ================================================================================================================== */
+/* MEDIA 1400px max-width =========================================================================================== */
+/* ================================================================================================================== */
+
+@media (max-width: 1400px) {
+  .navbar {
+    padding: 0.5rem 8rem;
+  }
+
+  /* section read more */
+  #read-more {
+    padding: 2rem 12rem 7rem 12rem;
+  }
+
+  /* About Page  */
+  #about-us {
+    padding: 2rem 18rem;
+  }
+
+  /* Hall of heroes */
+  #hall-of-heroes {
+    padding: 7rem 10rem 5rem 10rem;
+  }
+
+  /* Apply */
+  #welcome-form {
+    padding: 7rem 10rem 5rem 10rem;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 2rem 8rem 2rem 8rem;
+  }
+}
+
+/* ================================================================================================================== */
+/* MEDIA 1280 max-width / Nest Hub Max  ============================================================================= */
+/* ================================================================================================================== */
+
+@media (max-width: 1280px) {
+
+  .navbar {
+    padding: 0.5rem 5rem;
+  }
+
+  /* section read more */
+  #read-more {
+    padding: 2rem 8rem 7rem 8rem;
+  }
+
+  /* About Page  */
+  #about-us {
+    padding: 2rem 12rem;
+  }
+
+  /* Hall of heroes */
+  #hall-of-heroes {
+    padding: 7rem 5rem 5rem 5rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card {
+    width: 100%;
+  }
+
+  .hall-of-heroes-cards .card-2,
+  .hall-of-heroes-cards .card-4,
+  .hall-of-heroes-cards .card-6,
+  .hall-of-heroes-cards .card-8,
+  .hall-of-heroes-cards .card-10,
+  .hall-of-heroes-cards .card-12,
+  .hall-of-heroes-cards .card-14,
+  .hall-of-heroes-cards .card-16 {
+    margin-left: 0;
+  }
+
+  /* Apply */
+  #welcome-form {
+    padding: 7rem 5rem 5rem 5rem;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 2rem 5rem 2rem 5rem;
+  }
+
+}
+
+/* ================================================================================================================== */
+/* MEDIA 1200px max-width =========================================================================================== */
+/* ================================================================================================================== */
+
+@media (max-width: 1200px) {
+
+  .navbar {
+    padding: 0.5rem 5rem;
+  }
+
+  /* section read more */
+  #read-more {
+    padding: 2rem 8rem 7rem 8rem;
+  }
+
+  /* About Page  */
+  #about-us {
+    padding: 2rem 12rem;
+  }
+
+  /* Hall of heroes */
+  #hall-of-heroes {
+    padding: 7rem 5rem 5rem 5rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card {
+    width: 100%;
+  }
+
+  .hall-of-heroes-cards .card-2,
+  .hall-of-heroes-cards .card-4,
+  .hall-of-heroes-cards .card-6,
+  .hall-of-heroes-cards .card-8,
+  .hall-of-heroes-cards .card-10,
+  .hall-of-heroes-cards .card-12,
+  .hall-of-heroes-cards .card-14,
+  .hall-of-heroes-cards .card-16 {
+    margin-left: 0;
+  }
+
+  /* Apply */
+  #welcome-form {
+    padding: 7rem 5rem 5rem 5rem;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 2rem 5rem 2rem 5rem;
+  }
+
+}
+
+/* ================================================================================================================== */
+/* MEDIA 1024 max-width / Nest Hub ================================================================================== */
+/* ================================================================================================================== */
+
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 0.5rem 2rem;
+  }
+
+  /* section read more */
+  #read-more {
+    padding: 2rem 8rem 7rem 8rem;
+  }
+
+  /* About Page  */
+  #about-us {
+    padding: 2rem 12rem;
+  }
+
+  /* Hall of heroes */
+  #hall-of-heroes {
+    padding: 7rem 2rem 5rem 2rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card {
+    width: 100%;
+  }
+
+  .hall-of-heroes-cards .card-2,
+  .hall-of-heroes-cards .card-4,
+  .hall-of-heroes-cards .card-6,
+  .hall-of-heroes-cards .card-8,
+  .hall-of-heroes-cards .card-10,
+  .hall-of-heroes-cards .card-12,
+  .hall-of-heroes-cards .card-14,
+  .hall-of-heroes-cards .card-16 {
+    margin-left: 0;
+  }
+
+  /* Apply */
+  #welcome-form {
+    padding: 7rem 5rem 5rem 5rem;
+  }
+
+  #welcome-form .welcome-form {
+    padding: 0 0 2rem 0;
+  }
+
+  .apply-form .contact-form {
+    padding: 2rem 0 3rem 0;
+  }
+
+  .apply-form .contact-form {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'real-name'
+      'your-age-number'
+      'battle-net'
+      'discord'
+      'attend'
+      'spec-class'
+      'exp-1'
+      'exp-2'
+      'expect'
+      'addons'
+      'rest-take'
+      'anyone'
+      'add';
+  }
+
+
+  /* Footer */
+  #footer {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+
+}
+
+/* ================================================================================================================== */
+/* MEDIA 820px max-width / iPad Air ================================================================================= */
+/* ================================================================================================================== */
+
+@media (max-width: 820px) {
+
+  /* Navmenu */
+  .nav-menu {
+    width: 70%;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 0.5rem 2rem;
+  }
+
+  /* Showcase */
+  .showcase {
+    height: 100vh;
+  }
+
+  .showcase .main-heading {
+    font-size: 3rem;
+  }
+
+  .showcase .btn {
+    padding: 1.2rem 2rem;
+  }
+
+  /* Read More */
+  #read-more {
+    padding: 2rem 2rem 7rem 2rem;
+  }
+
+  #read-more .read-more-heading {
+    font-size: 2.5rem;
+  }
+
+  /* About Page  */
+  #about-us {
+    padding: 2rem 2rem;
+  }
+
+  #about-us .about-us-heading {
+    font-size: 2.5rem;
+  }
+
+  /* Hall of heroes */
+  #hall-of-heroes {
+    padding: 7rem 2rem 5rem 2rem;
+  }
+
+  #hall-of-heroes .hall-of-heroes-text {
+    padding: 0;
+  }
+
+  #hall-of-heroes .hall-of-heroes-heading {
+    font-size: 2.5rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card img {
+    display: none;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left {
+    margin: 0;
+  }
+
+  .hall-of-heroes-cards .hoh-card {
+    width: 100%;
+    height: 18rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left h4 {
+    font-size: 0.9rem;
+    padding: 0 0 0.3rem 1rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left .class {
+    font-size: 0.9rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left .date {
+    font-size: 0.9rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left .facts {
+    font-size: 0.9rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left .notes {
+    font-size: 0.9rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left .traits {
+    font-size: 0.8rem;
+  }
+
+  .hall-of-heroes-cards .card-2,
+  .hall-of-heroes-cards .card-4,
+  .hall-of-heroes-cards .card-6,
+  .hall-of-heroes-cards .card-8,
+  .hall-of-heroes-cards .card-10,
+  .hall-of-heroes-cards .card-12,
+  .hall-of-heroes-cards .card-14,
+  .hall-of-heroes-cards .card-16 {
+    margin-left: 0;
+  }
+
+  /* Apply */
+  #welcome-form {
+    padding: 7rem 5rem 5rem 5rem;
+  }
+
+  #welcome-form .welcome-form {
+    padding: 0 0 2rem 0;
+  }
+
+  .apply-form .contact-form {
+    padding: 2rem 0 3rem 0;
+  }
+
+  #welcome-form .form-heading {
+    font-size: 2.5rem;
+  }
+
+  .apply-form .contact-form {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'real-name'
+      'your-age-number'
+      'battle-net'
+      'discord'
+      'attend'
+      'spec-class'
+      'exp-1'
+      'exp-2'
+      'expect'
+      'addons'
+      'rest-take'
+      'anyone'
+      'add';
+  }
+
+  button {
+    width: 12rem;
+    padding: 1.2rem 2rem;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 2rem
+  }
+
+}
+
+
+/* ================================================================================================================== */
+/* MEDIA 800px max-width =========================================================================================== */
+/* ================================================================================================================== */
+
+@media (max-width: 800px) {
+
+  /* Navmenu */
+  .nav-menu {
+    width: 70%;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 0.5rem 2rem;
+  }
+
+  /* Showcase */
+  .showcase {
+    height: 50rem;
+  }
+
+  .showcase .main-heading {
+    font-size: 3rem;
+  }
+
+  .showcase .btn {
+    padding: 1.2rem 2rem;
+  }
+
+  /* Read More */
+  #read-more {
+    padding: 2rem 2rem 7rem 2rem;
+  }
+
+  #read-more .read-more-heading {
+    font-size: 2.5rem;
+  }
+
+  /* About Page  */
+  #about-us {
+    padding: 2rem 2rem;
+  }
+
+  #about-us .about-us-heading {
+    font-size: 2.5rem;
+  }
+
+  /* Hall of heroes */
+  #hall-of-heroes {
+    padding: 7rem 2rem 5rem 2rem;
+  }
+
+  #hall-of-heroes .hall-of-heroes-text {
+    padding: 0;
+  }
+
+  #hall-of-heroes .hall-of-heroes-heading {
+    font-size: 2.5rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card img {
+    display: none;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left {
+    margin: 0;
+  }
+
+  .hall-of-heroes-cards .hoh-card {
+    width: 100%;
+    height: 18rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left h4 {
+    font-size: 0.9rem;
+    padding: 0 0 0.3rem 1rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left .class {
+    font-size: 0.9rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left .date {
+    font-size: 0.9rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left .facts {
+    font-size: 0.9rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left .notes {
+    font-size: 0.9rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left .traits {
+    font-size: 0.8rem;
+  }
+
+  .hall-of-heroes-cards .card-2,
+  .hall-of-heroes-cards .card-4,
+  .hall-of-heroes-cards .card-6,
+  .hall-of-heroes-cards .card-8,
+  .hall-of-heroes-cards .card-10,
+  .hall-of-heroes-cards .card-12,
+  .hall-of-heroes-cards .card-14,
+  .hall-of-heroes-cards .card-16 {
+    margin-left: 0;
+  }
+
+  /* Apply */
+  #welcome-form {
+    padding: 7rem 5rem 5rem 5rem;
+  }
+
+  #welcome-form .welcome-form {
+    padding: 0 0 2rem 0;
+  }
+
+  .apply-form .contact-form {
+    padding: 2rem 0 3rem 0;
+  }
+
+  #welcome-form .form-heading {
+    font-size: 2.5rem;
+  }
+
+  .apply-form .contact-form {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'real-name'
+      'your-age-number'
+      'battle-net'
+      'discord'
+      'attend'
+      'spec-class'
+      'exp-1'
+      'exp-2'
+      'expect'
+      'addons'
+      'rest-take'
+      'anyone'
+      'add';
+  }
+
+  button {
+    width: 12rem;
+    padding: 1.2rem 2rem;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 2rem
+  }
+
+}
+
+/* ================================================================================================================== */
+/* MEDIA 500px max-width / mobile =================================================================================== */
+/* ================================================================================================================== */
+
+@media (max-width: 800px) {
+
+  /* Navmenu */
+  .nav-menu {
+    width: 95%;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 0.5rem 2rem;
+  }
+
+  /* Showcase */
+  .showcase {
+    height: 100vh;
+  }
+
+  .showcase .main-heading {
+    font-size: 2.5rem;
+  }
+
+  .showcase .btn {
+    padding: 1rem 1.8rem;
+  }
+
+  /* Read More */
+  #read-more {
+    padding: 4rem 2rem 4rem 2rem;
+  }
+
+  #read-more .read-more-heading {
+    font-size: 2rem;
+  }
+
+  #read-more .read-more .read-more-left .read-more-left-p-1,
+  #read-more .read-more .read-more-left .read-more-left-p-2 {
+    font-size: 0.9rem;
+    text-align: justify;
+    margin: 0 1rem 2rem 0;
+  }
+
+  #read-more .read-more a {
+    padding: 1rem 1.8rem;
+  }
+
+  /* About Page  */
+  #about-us {
+    padding: 2rem 2rem;
+  }
+
+  #about-us .about-us-heading {
+    font-size: 2rem;
+    margin: 5rem 0 -3rem 0;
+  }
+
+  #about-us .bottom-line {
+    margin: 3.4rem auto 3rem auto;
+  }
+
+  #about-us .about-us .about-us-card {
+    padding: 1rem;
+  }
+
+  #about-us .about-us .about-us-card p {
+    font-size: 1rem;
+  }
+
+  /* Hall of heroes */
+  #hall-of-heroes {
+    padding: 7rem 2rem 5rem 2rem;
+  }
+
+  #hall-of-heroes .bottom-line {
+    margin: -1.3rem auto 4rem auto;
+  }
+
+  #hall-of-heroes .hall-of-heroes-text {
+    padding: 0;
+  }
+
+  #hall-of-heroes .hall-of-heroes-text .text-1 {
+    font-size: 1rem;
+  }
+
+  #hall-of-heroes .hall-of-heroes-heading {
+    font-size: 2rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card img {
+    display: none;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left {
+    margin: 0;
+  }
+
+  .hall-of-heroes-cards .hoh-card {
+    width: 100%;
+    height: 28rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left h4 {
+    font-size: 0.9rem;
+    padding: 0 0 0.3rem 1rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left .class {
+    font-size: 0.9rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left .date {
+    font-size: 0.9rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left .facts {
+    font-size: 0.9rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left .notes {
+    font-size: 0.9rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card .hoh-card-left .traits {
+    font-size: 0.8rem;
+  }
+
+  .hall-of-heroes-cards .card-2,
+  .hall-of-heroes-cards .card-4,
+  .hall-of-heroes-cards .card-6,
+  .hall-of-heroes-cards .card-8,
+  .hall-of-heroes-cards .card-10,
+  .hall-of-heroes-cards .card-12,
+  .hall-of-heroes-cards .card-14,
+  .hall-of-heroes-cards .card-16 {
+    margin-left: 0;
+  }
+
+  .hall-of-heroes-cards .card-17 {
+    margin-bottom: 0;
+  }
+
+  /* Apply */
+  #welcome-form {
+    padding: 7rem 2rem 5rem 2rem;
+  }
+
+  #welcome-form .form-text {
+    font-size: 1rem;
+  }
+
+  #welcome-form .welcome-form {
+    padding: 0 0 2rem 0;
+  }
+
+  #welcome-form .bottom-line {
+    margin: -1.3rem auto 4rem auto;
+  }
+
+  .apply-form .contact-form {
+    padding: 2rem 0 3rem 0;
+  }
+
+  #welcome-form .form-heading {
+    font-size: 2rem;
+  }
+
+  .apply-form .contact-form {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'real-name'
+      'your-age-number'
+      'battle-net'
+      'discord'
+      'attend'
+      'spec-class'
+      'exp-1'
+      'exp-2'
+      'expect'
+      'addons'
+      'rest-take'
+      'anyone'
+      'add';
+  }
+
+  button {
+    width: 12rem;
+    padding: 1.2rem 2rem;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 2rem
+  }
+
+  #footer .footer-flex {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  #footer .footer-flex .footer-left-content i {
+    margin-left: 0.5rem;
+  }
+
+  #footer .footer-flex .footer-left-content .footer-left-content-1 {
+    justify-content: space-between;
+  }
+
+}
