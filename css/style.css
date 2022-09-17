@@ -31,6 +31,8 @@
 
   --dark-color-grey: #222;
   --dark-color-grey: #111;
+  --back-ground-color: #333;
+  --dev-color: #444;
 
 
 
@@ -241,7 +243,7 @@ p {
   border-left: 1px solid var(--main-color);
   border-right: 1px solid var(--main-color);
   border-radius: 10px;
-  background-color: #333;
+  background-color: var(--back-ground-color);
 }
 
 #read-more .read-more .read-more-left .read-more-heading-left {
@@ -347,7 +349,7 @@ p {
   background-color: var(--main-color);
   padding: 0.1rem;
   border-radius: 50%;
-  color: #222;
+  color: var(--dark-color-grey);
   margin: 0 0 0 2rem;
 }
 
@@ -419,7 +421,7 @@ p {
   width: 90%;
   display: flex;
   align-items: center;
-  background-color: #222;
+  background-color: var(--back-ground-color);
   margin-bottom: 4rem;
   border-radius: 10px;
   border-bottom: 1px solid var(--main-color);
@@ -631,7 +633,7 @@ textarea {
   font-size: 1.1rem;
   border-radius: 5px;
   font-family: var(--font-paragraph);
-  color: #222;
+  color: var(--dark-color-grey);
   background-color: var(--main-color-font-3);
   outline: var(--main-color) 1px solid;
 }
@@ -641,9 +643,9 @@ button {
   display: inline-block;
   padding: 1.5rem 2.5rem;
   color: var(--main-color-font-3);
-  background-color: #222;
+  background-color: var(--dark-color-grey);
   border-radius: 10px;
-  border: 1px solid #222;
+  border: 1px solid var(--dark-color-grey);
   transition: all 0.3s;
   font-size: 1.1rem;
   cursor: pointer;
@@ -725,18 +727,18 @@ button:hover {
 }
 
 .developer {
-  background-color: #222;
+  background-color: var(--dark-color-grey);
   text-align: center;
   display: block;
   padding: 0.4rem;
-  border-top: 1px dotted #333;
+  border-top: 1px dotted var(--back-ground-color);
 }
 
 .developer a {
-  color: #444;
+  color: var(--dev-color);
   font-size: 0.9rem;
 }
 
 .developer a:hover {
-  border-bottom: dotted 1px #444;
+  border-bottom: dotted 1px var(--dev-color);
 }
