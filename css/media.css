@@ -621,8 +621,13 @@
     padding: 1rem;
   }
 
+  #read-more .bottom-line {
+    margin: -1.3rem auto 3rem auto;
+  }
+
   #read-more .read-more-heading {
     font-size: 2rem;
+    margin: 3rem 0;
   }
 
   #read-more .read-more .read-more-left .read-more-left-p-1,

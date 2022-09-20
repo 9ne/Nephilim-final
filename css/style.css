@@ -123,7 +123,9 @@ p {
   background-color: #222;
   position: fixed;
   border-bottom: 2px solid var(--main-color);
-  z-index: 1;
+  z-index: 3;
+  /* animation: navbar 0.5s forwards 0.5s ease;
+  transform: translateY(-4.375rem); */
 }
 
 .nav-menu {
@@ -173,6 +175,18 @@ p {
   align-items: center;
   justify-content: center;
   text-align: center;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.showcase .back-logo {
+  position: absolute;
+  display: block;
+  z-index: -1;
+  height: 70%;
+  animation: logo 1s forwards;
+  color: var(--dark-color-grey);
 }
 
 .showcase .main-heading {
@@ -180,11 +194,16 @@ p {
   font-size: 4rem;
   text-transform: uppercase;
   text-shadow: 0.1rem 0.5rem 1rem var(--main-color);
+  animation: h1 0.5s forwards 0.7s;
+  transform: translateX(2000px);
+  overflow: hidden;
 }
 
 .showcase .buttons-showcase {
   display: flex;
   gap: 2rem;
+  animation: btns 0.5s forwards 0.7s;
+  transform: translateX(-2000px);
 }
 
 .showcase .buttons-showcase i {
@@ -294,6 +313,7 @@ p {
 #about-us {
   padding: 2rem 25rem;
   background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(34, 34, 34, 1), rgba(51, 51, 51, 0.9));
+  z-index: 2;
 }
 
 #about-us .about-us-heading {
@@ -309,6 +329,15 @@ p {
   width: 8rem;
   background-color: var(--main-color);
   margin: -1.3rem auto 6rem auto;
+}
+
+#about-us .back-logo {
+  position: fixed;
+  width: 40%;
+  transform: translateX(1000px);
+  margin-top: 5rem;
+  opacity: 0.4;
+  z-index: -1;
 }
 
 #about-us .about-us .about-us-card {
@@ -376,6 +405,15 @@ p {
 #hall-of-heroes {
   padding: 7rem 20rem 5rem 20rem;
   background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(34, 34, 34, 1), rgba(51, 51, 51, 0.9), rgba(34, 34, 34, 1), rgba(51, 51, 51, 0.9));
+}
+
+#hall-of-heroes .back-logo {
+  position: fixed;
+  width: 40%;
+  transform: translateX(1000px);
+  margin-top: 5rem;
+  opacity: 0.4;
+  z-index: -1;
 }
 
 #hall-of-heroes .hall-of-heroes-heading {
@@ -501,6 +539,15 @@ p {
 #welcome-form {
   background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(34, 34, 34, 1), rgba(51, 51, 51, 0.9));
   padding: 7rem 20rem 5rem 20rem;
+}
+
+#welcome-form .back-logo {
+  position: fixed;
+  width: 40%;
+  transform: translateX(1000px);
+  margin-top: 5rem;
+  opacity: 0.4;
+  z-index: -1;
 }
 
 #welcome-form .welcome-form {

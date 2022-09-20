@@ -1,0 +1,31 @@
+/* Navbar */
+@keyframes navbar {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Logo */
+@keyframes logo {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.2;
+  }
+}
+
+/* Heading */
+@keyframes h1 {
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Butttons */
+@keyframes btns {
+  to {
+    transform: translateX(0);
+  }
+}
