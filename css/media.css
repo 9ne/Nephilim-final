@@ -595,7 +595,7 @@
 
   /* Navbar */
   .navbar {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
   }
 
   /* Showcase */
@@ -604,7 +604,8 @@
   }
 
   .showcase .main-heading {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
+    padding: 0 0.5rem 0 0.5rem;
   }
 
   .showcase .btn {
@@ -613,7 +614,11 @@
 
   /* Read More */
   #read-more {
-    padding: 4rem 2rem 4rem 2rem;
+    padding: 4rem 1.5rem 4rem 1.5rem;
+  }
+
+  #read-more .read-more {
+    padding: 1rem;
   }
 
   #read-more .read-more-heading {
@@ -633,7 +638,7 @@
 
   /* About Page  */
   #about-us {
-    padding: 2rem 2rem;
+    padding: 2rem 1.5rem;
   }
 
   #about-us .about-us-heading {
@@ -646,11 +651,20 @@
   }
 
   #about-us .about-us .about-us-card {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   #about-us .about-us .about-us-card p {
     font-size: 1rem;
+  }
+
+  #about-us .about-us .about-us-card .card-3-heading {
+    margin: 0.5rem 1rem 0 1rem;
+    padding: 0.5rem 0 0.2rem 0;
+  }
+
+  #about-us .about-us .about-us-card .text-skills {
+    padding: 1.3rem 1rem 0.5rem 1.8rem;
   }
 
   /* Hall of heroes */
@@ -680,11 +694,15 @@
 
   .hall-of-heroes-cards .hoh-card .hoh-card-left {
     margin: 0;
+    height: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
   }
 
   .hall-of-heroes-cards .hoh-card {
     width: 100%;
-    height: 28rem;
+    height: 100%;
   }
 
   .hall-of-heroes-cards .hoh-card .hoh-card-left h4 {
@@ -729,7 +747,7 @@
 
   /* Apply */
   #welcome-form {
-    padding: 7rem 2rem 5rem 2rem;
+    padding: 7rem 1.5rem 5rem 1.5rem;
   }
 
   #welcome-form .form-text {
@@ -749,7 +767,13 @@
   }
 
   #welcome-form .form-heading {
+    margin: 2rem 0 1.5rem 0;
     font-size: 2rem;
+
+  }
+
+  #welcome-form .form-text {
+    text-align: center;
   }
 
   .apply-form .contact-form {
@@ -777,7 +801,7 @@
 
   /* Footer */
   #footer {
-    padding: 2rem
+    padding: 1rem
   }
 
   #footer .footer-flex {
