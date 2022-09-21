@@ -331,15 +331,6 @@ p {
   margin: -1.3rem auto 6rem auto;
 }
 
-#about-us .back-logo {
-  position: fixed;
-  width: 40%;
-  transform: translateX(1000px);
-  margin-top: 5rem;
-  opacity: 0.4;
-  z-index: -1;
-}
-
 #about-us .about-us .about-us-card {
   background-color: #333;
   padding: 1.5rem;
@@ -405,15 +396,6 @@ p {
 #hall-of-heroes {
   padding: 7rem 20rem 5rem 20rem;
   background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(34, 34, 34, 1), rgba(51, 51, 51, 0.9), rgba(34, 34, 34, 1), rgba(51, 51, 51, 0.9));
-}
-
-#hall-of-heroes .back-logo {
-  position: fixed;
-  width: 40%;
-  transform: translateX(1000px);
-  margin-top: 5rem;
-  opacity: 0.4;
-  z-index: -1;
 }
 
 #hall-of-heroes .hall-of-heroes-heading {
@@ -539,15 +521,6 @@ p {
 #welcome-form {
   background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(34, 34, 34, 1), rgba(51, 51, 51, 0.9));
   padding: 7rem 20rem 5rem 20rem;
-}
-
-#welcome-form .back-logo {
-  position: fixed;
-  width: 40%;
-  transform: translateX(1000px);
-  margin-top: 5rem;
-  opacity: 0.4;
-  z-index: -1;
 }
 
 #welcome-form .welcome-form {
@@ -707,12 +680,6 @@ button:hover {
   transform: scale(1.2);
   border: 1px solid var(--main-color);
 }
-
-
-
-
-
-
 
 /* ================================================================================================================== */
 /* ================================================================================================================== */
