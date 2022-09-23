@@ -72,12 +72,18 @@
 
   /* Hall of heroes */
   #hall-of-heroes {
-    padding: 7rem 10rem 5rem 10rem;
+    padding: 7rem 8rem 5rem 8rem;
+  }
+
+  .slider-content {
+    padding: 4rem 1rem;
+    margin: 0 2rem;
+    overflow: hidden;
   }
 
   /* Apply */
   #welcome-form {
-    padding: 7rem 10rem 5rem 10rem;
+    padding: 7rem 8rem 5rem 8rem;
   }
 
   /* Footer */
@@ -145,69 +151,17 @@
 @media (max-width: 1200px) {
 
   .navbar {
-    padding: 0.5rem 5rem;
-  }
-
-  /* section read more */
-  #read-more {
-    padding: 2rem 8rem 7rem 8rem;
-  }
-
-  /* About Page  */
-  #about-us {
-    padding: 2rem 12rem;
-  }
-
-  /* Hall of heroes */
-  #hall-of-heroes {
-    padding: 7rem 5rem 5rem 5rem;
-  }
-
-  .hall-of-heroes-cards .hoh-card {
-    width: 100%;
-  }
-
-  .hall-of-heroes-cards .card-2,
-  .hall-of-heroes-cards .card-4,
-  .hall-of-heroes-cards .card-6,
-  .hall-of-heroes-cards .card-8,
-  .hall-of-heroes-cards .card-10,
-  .hall-of-heroes-cards .card-12,
-  .hall-of-heroes-cards .card-14,
-  .hall-of-heroes-cards .card-16 {
-    margin-left: 0;
-  }
-
-  /* Apply */
-  #welcome-form {
-    padding: 7rem 5rem 5rem 5rem;
-  }
-
-  /* Footer */
-  #footer {
-    padding: 2rem 5rem 2rem 5rem;
-  }
-
-}
-
-/* ================================================================================================================== */
-/* MEDIA 1024 max-width / Nest Hub ================================================================================== */
-/* ================================================================================================================== */
-
-@media (max-width: 1024px) {
-
-  .navbar {
     padding: 0.5rem 2rem;
   }
 
   /* section read more */
   #read-more {
-    padding: 2rem 8rem 7rem 8rem;
+    padding: 2rem 5rem 7rem 5rem;
   }
 
   /* About Page  */
   #about-us {
-    padding: 2rem 12rem;
+    padding: 2rem 5rem;
   }
 
   /* Hall of heroes */
@@ -229,6 +183,66 @@
   .hall-of-heroes-cards .card-16 {
     margin-left: 0;
   }
+
+  .slider-content {
+    padding: 4rem 1rem;
+    margin: 0 2rem;
+    overflow: hidden;
+  }
+
+  /* Apply */
+  #welcome-form {
+    padding: 7rem 4rem 5rem 4rem;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 2rem;
+  }
+
+}
+
+/* ================================================================================================================== */
+/* MEDIA 1024 max-width / Nest Hub ================================================================================== */
+/* ================================================================================================================== */
+
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 0.5rem 2rem;
+  }
+
+  /* section read more */
+  #read-more {
+    padding: 2rem 5rem 7rem 5rem;
+  }
+
+  /* About Page  */
+  #about-us {
+    padding: 2rem 5rem;
+  }
+
+  /* Hall of heroes */
+  #hall-of-heroes {
+    padding: 7rem 2rem 5rem 2rem;
+  }
+
+  .hall-of-heroes-cards .hoh-card {
+    width: 100%;
+  }
+
+  .hall-of-heroes-cards .card-2,
+  .hall-of-heroes-cards .card-4,
+  .hall-of-heroes-cards .card-6,
+  .hall-of-heroes-cards .card-8,
+  .hall-of-heroes-cards .card-10,
+  .hall-of-heroes-cards .card-12,
+  .hall-of-heroes-cards .card-14,
+  .hall-of-heroes-cards .card-16 {
+    margin-left: 0;
+  }
+
+
 
   /* Apply */
   #welcome-form {
@@ -264,7 +278,7 @@
 
   /* Footer */
   #footer {
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 2rem;
   }
 
 }
@@ -318,7 +332,7 @@
 
   /* Hall of heroes */
   #hall-of-heroes {
-    padding: 7rem 2rem 5rem 2rem;
+    padding: 7rem 1rem 5rem 1rem;
   }
 
   #hall-of-heroes .hall-of-heroes-text {
@@ -378,9 +392,15 @@
     margin-left: 0;
   }
 
+  .slider-content {
+    padding: 4rem 1rem;
+    margin: 0 2.5rem;
+    overflow: hidden;
+  }
+
   /* Apply */
   #welcome-form {
-    padding: 7rem 5rem 5rem 5rem;
+    padding: 7rem 2rem 5rem 2rem;
   }
 
   #welcome-form .welcome-form {
@@ -420,7 +440,7 @@
 
   /* Footer */
   #footer {
-    padding: 2rem
+    padding: 2rem;
   }
 
 }
@@ -429,6 +449,9 @@
 /* ================================================================================================================== */
 /* MEDIA 800px max-width =========================================================================================== */
 /* ================================================================================================================== */
+
+
+
 
 @media (max-width: 800px) {
 
@@ -475,7 +498,7 @@
 
   /* Hall of heroes */
   #hall-of-heroes {
-    padding: 7rem 2rem 5rem 2rem;
+    padding: 7rem 1rem 5rem 1rem;
   }
 
   #hall-of-heroes .hall-of-heroes-text {
@@ -534,6 +557,7 @@
   .hall-of-heroes-cards .card-16 {
     margin-left: 0;
   }
+
 
   /* Apply */
   #welcome-form {
@@ -623,7 +647,7 @@
 
   /* Read More */
   #read-more {
-    padding: 4rem 1.5rem 4rem 1.5rem;
+    padding: 4rem 1rem 4rem 1rem;
   }
 
   #read-more .read-more {
@@ -683,7 +707,7 @@
 
   /* Hall of heroes */
   #hall-of-heroes {
-    padding: 7rem 2rem 5rem 2rem;
+    padding: 7rem 1rem 5rem 1rem;
   }
 
   #hall-of-heroes .bottom-line {
@@ -759,9 +783,14 @@
     margin-bottom: 0;
   }
 
+  /* SLider */
+  .slider-content {
+    margin: 0 2.7rem;
+  }
+
   /* Apply */
   #welcome-form {
-    padding: 7rem 1.5rem 5rem 1.5rem;
+    padding: 7rem 1rem 5rem 1rem;
   }
 
   #welcome-form .form-text {

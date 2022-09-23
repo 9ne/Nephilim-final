@@ -395,7 +395,7 @@ p {
 
 #hall-of-heroes {
   padding: 7rem 20rem 5rem 20rem;
-  background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(34, 34, 34, 1), rgba(51, 51, 51, 0.9), rgba(34, 34, 34, 1), rgba(51, 51, 51, 0.9));
+  background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(34, 34, 34, 1), rgba(51, 51, 51, 0.9));
 }
 
 #hall-of-heroes .hall-of-heroes-heading {
@@ -414,7 +414,7 @@ p {
 }
 
 #hall-of-heroes .hall-of-heroes-text {
-  padding: 0 5rem;
+  padding-top: 2rem 5rem 3rem 5rem;
 }
 
 #hall-of-heroes .hall-of-heroes-text .text-1 {
@@ -430,87 +430,442 @@ p {
   text-align: center;
 }
 
-/* CARDS =============================================== */
+
+
+/* CARDS SLIDER ======================================= */
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-content {
+  padding: 4rem 1rem;
+  margin: 0 4rem;
+  overflow: hidden;
+}
+
+.slider-btn {
+  color: var(--main-color);
+  transition: color 0.3s ease;
+}
+
+.slider-btn:hover {
+  color: var(--main-color-2);
+}
+
+.slider-btn::before,
+.slider-btn::after {
+  font-size: 3rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--main-color);
+}
 
 .hall-of-heroes-cards {
-  margin-top: 7rem;
+  margin-top: 2rem;
+  position: relative;
 }
+
+/* CARDS =============================================== */
 
 .hall-of-heroes-cards .hoh-card {
-  height: 21rem;
-  width: 90%;
-  display: flex;
-  align-items: center;
-  background-color: var(--back-ground-color);
-  margin-bottom: 4rem;
-  border-radius: 10px;
-  border-bottom: 1px solid var(--main-color);
+  font-size: 0.8rem;
+  overflow: hidden;
 }
 
-.hall-of-heroes-cards .hoh-card img {
-  height: 100%;
-  width: 250px;
-  object-fit: cover;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.hall-of-heroes-cards .hoh-card .hoh-card-left {
-  padding: 1rem;
-  margin: 1rem;
-}
-
-.hall-of-heroes-cards .hoh-card .hoh-card-left h4 {
-  padding: 0 0 0.5rem 1rem;
-}
-
-.hall-of-heroes-cards .hoh-card .hoh-card-left .name {
-  color: var(--main-color);
-}
-
-.hall-of-heroes-cards .hoh-card .hoh-card-left .facts {
-  padding: 0.2rem 0;
-}
-
-.hall-of-heroes-cards .hoh-card .hoh-card-left .traits {
-  padding: 0.5rem;
+.hall-of-heroes-cards .hoh-card .hoh-card-heading {
   font-size: 0.9rem;
+  padding: 0;
+  margin: 0;
+}
+
+.hall-of-heroes-cards .hoh-card .hoh-card-heading .name {
+  color: var(--main-color);
+  margin-left: 0.4rem;
+  font-weight: var(--fw-heading-700);
+}
+
+.hall-of-heroes-cards .hoh-card .date {
+  padding-bottom: 0.6rem;
+  width: max-content;
+  position: relative;
+}
+
+.hall-of-heroes-cards .hoh-card .date::after {
+  content: '';
+  position: absolute;
+  background: var(--main-color);
+  width: 100%;
+  height: 3px;
+  top: 1.25rem;
+  left: 0;
+  border-radius: 10px;
+  transform: scale(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.hall-of-heroes-cards .hoh-card:hover .date::after {
+  transform: scaleX(1);
+}
+
+.hall-of-heroes-cards .hoh-card .facts {
+  margin-bottom: 0.3rem;
+}
+
+.hall-of-heroes-cards .hoh-card .card-content {
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+
+.hall-of-heroes-cards .hoh-card .card-content-text {
+  transform: translateY(270%);
+  transition: 0.5s ease;
+}
+
+.hall-of-heroes-cards .hoh-card:hover .card-content-text {
+  transform: translateY(0);
+}
+
+.hall-of-heroes-cards .hoh-card .traits {
+  padding: 0.5rem 0 1rem 1rem;
+  font-size: 0.7rem;
   font-style: italic;
 }
 
-/* CARD */
-
-.hall-of-heroes-cards .card-2,
-.hall-of-heroes-cards .card-4,
-.hall-of-heroes-cards .card-6,
-.hall-of-heroes-cards .card-8,
-.hall-of-heroes-cards .card-10,
-.hall-of-heroes-cards .card-12,
-.hall-of-heroes-cards .card-14,
-.hall-of-heroes-cards .card-16 {
-  justify-content: flex-end;
-  flex-direction: row-reverse;
-  margin-left: 10%;
+.hall-of-heroes-cards .hoh-card .facts,
+.hall-of-heroes-cards .hoh-card .notes,
+.hall-of-heroes-cards .hoh-card .traits {
+  opacity: 0.9;
 }
 
-.hall-of-heroes-cards .card-2 img,
-.hall-of-heroes-cards .card-4 img,
-.hall-of-heroes-cards .card-6 img,
-.hall-of-heroes-cards .card-8 img,
-.hall-of-heroes-cards .card-10 img,
-.hall-of-heroes-cards .card-12 img,
-.hall-of-heroes-cards .card-14 img,
-.hall-of-heroes-cards .card-16 img {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+/* Card 1 */
+.hall-of-heroes-cards .hoh-card.card-1,
+.hall-of-heroes-cards .hoh-card.card-2,
+.hall-of-heroes-cards .hoh-card.card-3,
+.hall-of-heroes-cards .hoh-card.card-4,
+.hall-of-heroes-cards .hoh-card.card-5,
+.hall-of-heroes-cards .hoh-card.card-6,
+.hall-of-heroes-cards .hoh-card.card-7,
+.hall-of-heroes-cards .hoh-card.card-8,
+.hall-of-heroes-cards .hoh-card.card-9,
+.hall-of-heroes-cards .hoh-card.card-10,
+.hall-of-heroes-cards .hoh-card.card-11,
+.hall-of-heroes-cards .hoh-card.card-12,
+.hall-of-heroes-cards .hoh-card.card-13,
+.hall-of-heroes-cards .hoh-card.card-14,
+.hall-of-heroes-cards .hoh-card.card-15,
+.hall-of-heroes-cards .hoh-card.card-16,
+.hall-of-heroes-cards .hoh-card.card-17 {
+  width: 18rem;
+  height: 25rem;
+  padding: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ heroes/jomoja.png') no-repeat center center/cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
 }
 
-.founder {
-  text-transform: uppercase;
+.hall-of-heroes-cards .hoh-card.card-1:hover,
+.hall-of-heroes-cards .hoh-card.card-2:hover,
+.hall-of-heroes-cards .hoh-card.card-3:hover,
+.hall-of-heroes-cards .hoh-card.card-4:hover,
+.hall-of-heroes-cards .hoh-card.card-5:hover,
+.hall-of-heroes-cards .hoh-card.card-6:hover,
+.hall-of-heroes-cards .hoh-card.card-7:hover,
+.hall-of-heroes-cards .hoh-card.card-8:hover,
+.hall-of-heroes-cards .hoh-card.card-9:hover,
+.hall-of-heroes-cards .hoh-card.card-10:hover,
+.hall-of-heroes-cards .hoh-card.card-11:hover,
+.hall-of-heroes-cards .hoh-card.card-12:hover,
+.hall-of-heroes-cards .hoh-card.card-13:hover,
+.hall-of-heroes-cards .hoh-card.card-14:hover,
+.hall-of-heroes-cards .hoh-card.card-15:hover,
+.hall-of-heroes-cards .hoh-card.card-16:hover,
+.hall-of-heroes-cards .hoh-card.card-17:hover {
+  transform: scale(1.1);
+}
+
+/* Card 2 */
+.hall-of-heroes-cards .hoh-card.card-2 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ heroes/qawas.png') no-repeat center center/cover;
+}
+
+.hall-of-heroes-cards .card-2 .card-content {
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+
+/* Card 3 */
+.hall-of-heroes-cards .hoh-card.card-3 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ heroes/datour.png') no-repeat center center/cover;
+}
+
+/* Card 4 */
+.hall-of-heroes-cards .hoh-card.card-4 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ heroes/razbivam.png') no-repeat center center/cover;
+}
+
+/* Card 5 */
+.hall-of-heroes-cards .hoh-card.card-5 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ heroes/ancient.png') no-repeat center center/cover;
+}
+
+/* Card 6 */
+.hall-of-heroes-cards .hoh-card.card-6 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ heroes/qaloo.png') no-repeat center center/cover;
+}
+
+/* Card 7 */
+.hall-of-heroes-cards .hoh-card.card-7 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ heroes/primeolek.png') no-repeat center center/cover;
+}
+
+/* Card 8 */
+.hall-of-heroes-cards .hoh-card.card-8 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ heroes/overkofe.png') no-repeat center center/cover;
+}
+
+/* Card 9*/
+.hall-of-heroes-cards .hoh-card.card-9 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ heroes/frubby.png') no-repeat center center/cover;
+}
+
+/* Card 10*/
+.hall-of-heroes-cards .hoh-card.card-10 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ heroes/valyrian.png') no-repeat center center/cover;
+}
+
+/* Card 11 */
+.hall-of-heroes-cards .hoh-card.card-11 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ heroes/lustylady.png') no-repeat center center/cover;
+}
+
+/* Card 12 */
+.hall-of-heroes-cards .hoh-card.card-12 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ heroes/supermadoo.png') no-repeat center center/cover;
+}
+
+/* Card 13 */
+.hall-of-heroes-cards .hoh-card.card-13 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ heroes/look.png') no-repeat center center/cover;
+}
+
+/* Card 14 */
+.hall-of-heroes-cards .hoh-card.card-14 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ heroes/caulimoon.png') no-repeat center center/cover;
+}
+
+/* Card 15 */
+.hall-of-heroes-cards .hoh-card.card-15 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ heroes/hayoui.png') no-repeat center center/cover;
+}
+
+/* Card 16 */
+.hall-of-heroes-cards .hoh-card.card-16 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ heroes/flegz.jpg') no-repeat center center/cover;
+}
+
+/* Card 17 */
+.hall-of-heroes-cards .hoh-card.card-17 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ heroes/kerba.jpg') no-repeat center center/cover;
+}
+
+.hall-of-heroes-cards .hoh-card.card-17 .card-content .class {
+  padding-bottom: 0.6rem;
+  width: max-content;
+  position: relative;
+}
+
+.hall-of-heroes-cards .hoh-card.card-17 .card-content .class::after {
+  content: '';
+  position: absolute;
+  background: var(--main-color);
+  width: 100%;
+  height: 3px;
+  top: 1.25rem;
+  left: 0;
+  border-radius: 10px;
+  transform: scale(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.hall-of-heroes-cards .hoh-card.card-17:hover .card-content .class::after {
+  transform: scaleX(1);
+}
+
+
+/* ================================================================================================================== */
+/* ================================================================================================================== */
+/* HALL OF LEGENDS PAGE ============================================================================================= */
+/* ================================================================================================================== */
+/* ================================================================================================================== */
+
+/* CARDS ============================================== */
+
+
+
+.hall-of-legends .hall-of-heroes-cards .hoh-card .card-content {
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+
+.hall-of-legends .hall-of-heroes-cards .hoh-card .card-content .card-content-text {
+  transform: translateY(200%);
+  transition: 0.5s ease;
+}
+
+.hall-of-legends .hall-of-heroes-cards .hoh-card:hover .card-content .card-content-text {
+  transform: translateY(0);
+}
+
+.hall-of-legends .hall-of-heroes-cards .hoh-card .facts {
+  margin-bottom: 0.3rem;
+}
+
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-1,
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-2,
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-3,
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-4,
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-5,
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-6,
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-7,
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-8,
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-9,
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-10 {
+  width: 18rem;
+  height: 25rem;
+  padding: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ legends/teek.png') no-repeat center center/cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+/* Card 2 */
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-2 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ legends/koronios.png') no-repeat center center/cover;
+}
+
+.hall-of-legends .hall-of-heroes-cards .card-2 .card-content {
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+
+/* Card 3 */
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-3 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ legends/john.png') no-repeat center center/cover;
+}
+
+.hall-of-legends .hall-of-heroes-cards .card-3 .card-content {
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+
+.hall-of-legends .hall-of-heroes-cards .card-3 .card-content .card-content-text {
+  transform: translateY(220%);
+  transition: 0.5s ease;
+}
+
+/* Card 4 */
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-4 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ legends/fernado.png') no-repeat center center/cover;
+}
+
+.hall-of-legends .hall-of-heroes-cards .card-4 .card-content {
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+
+/* Card 5 */
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-5 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ legends/lucifire.png') no-repeat center center/cover;
+}
+
+.hall-of-legends .hall-of-heroes-cards .card-5 .card-content {
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+
+.hall-of-legends .card-5 .founder {
   color: var(--main-color);
+  font-weight: var(--fw-heading-700);
 }
+
+/* Card 6 */
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-6 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ legends/gudrun.png') no-repeat center center/cover;
+}
+
+.hall-of-legends .hall-of-heroes-cards .card-6 .card-content {
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+
+/* Card 7 */
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-7 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ legends/tresbone.png') no-repeat center center/cover;
+}
+
+.hall-of-legends .hall-of-heroes-cards .card-7 .card-content {
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+
+/* Card 8 */
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-8 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ legends/thundria.png') no-repeat center center/cover;
+}
+
+.hall-of-legends .hall-of-heroes-cards .card-8 .card-content {
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+
+/* Card 9*/
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-9 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ legends/patrozzo.png') no-repeat center center/cover;
+}
+
+.hall-of-legends .hall-of-heroes-cards .card-9 .card-content {
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+
+/* Card 10*/
+.hall-of-legends .hall-of-heroes-cards .hoh-card.card-10 {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)),
+    url('/img/hall\ of\ legends/sarda.png') no-repeat center center/cover;
+}
+
+
 
 /* ================================================================================================================== */
 /* ================================================================================================================== */
@@ -560,8 +915,7 @@ form {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-    'real-name your-age-number'
+  grid-template-areas: 'real-name your-age-number'
     'battle-net discord'
     'attend spec-class'
     'exp-1 exp-2'
@@ -658,7 +1012,7 @@ textarea {
   outline: var(--main-color) 1px solid;
 }
 
-button {
+.button-form {
   width: 15rem;
   display: inline-block;
   padding: 1.5rem 2.5rem;
@@ -672,11 +1026,11 @@ button {
   align-self: center;
 }
 
-button i {
+.button-form i {
   color: var(--main-color);
 }
 
-button:hover {
+.button-form:hover {
   transform: scale(1.2);
   border: 1px solid var(--main-color);
 }
