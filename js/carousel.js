@@ -53,6 +53,10 @@ var swiper = new Swiper(".slider-content", {
       slidesPerView: 3,
     },
 
+    2560: {
+      slidesPerView: 5,
+    },
+
     3440: {
       slidesPerView: 7,
     },
