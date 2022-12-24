@@ -102,7 +102,6 @@ p {
   border: 1px solid #222;
   transition: all 0.3s;
   font-size: 1.1rem;
-  font-size: 1.2rem;
 }
 
 /* ================================================================================================================== */
@@ -922,6 +921,7 @@ form {
     'exp-1 exp-2'
     'expect addons'
     'rest-take anyone'
+    'rest-take-new anyone-new'
     'add add';
 }
 
