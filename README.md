@@ -1,0 +1,2 @@
+# This is a static website built for the guild Nephilim which is from a video game called World of Warcarft. The point of this website is when people apply to the guild, i made an apply form within this website so people who want to apply can use this form instead of talking direcly to the officers of the guild which it is time consuming. The website is still up and running and it's been using constanly by the guild.
+https://nephilim.online
